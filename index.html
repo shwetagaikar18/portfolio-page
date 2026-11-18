@@ -1,114 +1,199 @@
-<!DOCTYPE>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal portfolio website">
-  <title>Shweta Gaikar | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shweta Gaikar is a Senior GCP Data Engineer with 6+ years of experience building cloud-native data platforms and pipelines.">
+  <meta name="theme-color" content="#101a2b">
+  <title>Shweta Gaikar | Senior GCP Data Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="nav-wrap">
-    <nav class="nav" aria-label="Main navigation">
-      <a class="logo" href="#top" aria-label="Home">SG<span>.</span></a>
-      <button class="menu-button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
-      <div class="nav-links">
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Shweta Gaikar, home">SG<span>.</span></a>
+      <button class="menu-button" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">☰</button>
+      <div class="nav-links" id="nav-links">
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a class="nav-cta" href="#contact">Contact <span>↗</span></a>
       </div>
     </nav>
   </header>
 
   <main id="top">
-    <section class="hero">
-      <div class="hero-content">
-        <p class="eyebrow">Hello, I'm</p>
-        <h1>Shweta<br><span>Gaikar.</span></h1>
-        <p class="intro">A creative developer crafting thoughtful digital experiences, one line of code at a time.</p>
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Pune, India <span class="eyebrow-divider">/</span> Open to opportunities</p>
+        <h1>Shweta<br><em>Gaikar.</em></h1>
+        <p class="role">Senior GCP Data Engineer <span>·</span> 6+ years of experience</p>
+        <p class="hero-intro">I design and operate scalable cloud data platforms, turning complex enterprise data into reliable, analytics-ready solutions.</p>
         <div class="hero-actions">
-          <a class="button primary" href="#projects">View my work <span>→</span></a>
-          <a class="button secondary" href="https://github.com/shwetagaikar18" target="_blank" rel="noopener">GitHub</a>
+          <a class="button button-primary" href="#experience">Explore my experience <span>↓</span></a>
+          <a class="button button-outline" href="mailto:shwetagaikar18@gmail.com">Get in touch <span>↗</span></a>
+        </div>
+        <div class="contact-chips" aria-label="Contact information">
+          <a href="mailto:shwetagaikar18@gmail.com">shwetagaikar18@gmail.com</a>
+          <a href="tel:+918928676560">+91 8928676560</a>
         </div>
       </div>
-      <div class="hero-art" aria-label="Decorative portfolio artwork">
-        <div class="orb orb-one"></div>
-        <div class="orb orb-two"></div>
-        <div class="code-card">
-          <div class="code-dots"><i></i><i></i><i></i></div>
-          <pre><code><span class="pink">const</span> <span class="blue">developer</span> = {
-  name: <span class="green">"Shweta"</span>,
-  passion: <span class="green">"Creating"</span>,
-  status: <span class="green">"Available"</span>
-};</code></pre>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="data-card">
+          <div class="card-head"><span class="card-indicator"></span> DATA PLATFORM / GCP</div>
+          <div class="pipeline">
+            <div class="pipeline-node"><span>01</span><b>INGEST</b><small>Dataflow · Pub/Sub</small></div>
+            <div class="pipeline-line"></div>
+            <div class="pipeline-node"><span>02</span><b>TRANSFORM</b><small>Beam · Composer</small></div>
+            <div class="pipeline-line"></div>
+            <div class="pipeline-node pipeline-highlight"><span>03</span><b>ANALYZE</b><small>BigQuery · Looker</small></div>
+          </div>
+          <div class="card-foot"><span>Cloud-native workflows</span><span class="live-dot"></span></div>
         </div>
+        <div class="orbit-label label-top">6+ YEARS</div>
+        <div class="orbit-label label-bottom">GCP · DATA · CLOUD</div>
       </div>
     </section>
 
-    <section class="about" id="about">
-      <p class="section-label">01 / About</p>
+    <section class="metrics" aria-label="Career highlights">
+      <div class="metrics-inner shell">
+        <div><strong>6+</strong><span>Years in data engineering</span></div>
+        <div><strong>GCP</strong><span>Cloud-native expertise</span></div>
+        <div><strong>95%</strong><span>Client satisfaction at Datamatica</span></div>
+        <div><strong>End to end</strong><span>Pipeline delivery and support</span></div>
+      </div>
+    </section>
+
+    <section class="section shell" id="about">
+      <div class="section-label"><span>01</span> PROFESSIONAL SUMMARY</div>
       <div class="about-grid">
-        <h2>Turning ideas into<br><span>digital realities.</span></h2>
+        <h2>Reliable data.<br><em>Real impact.</em></h2>
         <div class="about-copy">
-          <p>I'm passionate about building accessible, engaging, and well-designed websites that make a real difference.</p>
-          <p>I enjoy learning new technologies and transforming complex problems into simple, beautiful solutions.</p>
-          <a class="text-link" href="#contact">Let's work together →</a>
+          <p>Accomplished Data Engineer with 6+ years of experience designing, developing, and operating scalable enterprise data platforms and cloud-native pipelines on Google Cloud Platform (GCP).</p>
+          <p>Hands-on expertise in BigQuery, Apache Airflow (Cloud Composer), Dataflow, Apache Beam, Python, PySpark, and SQL, supporting batch and event-driven data ingestion and enterprise data modernization.</p>
+          <p>Proven track record in BigQuery performance optimization, data quality validation, source-to-target reconciliation, metadata management, and production pipeline support across regulated enterprise environments.</p>
         </div>
       </div>
     </section>
 
-    <section class="projects" id="projects">
-      <p class="section-label">02 / Selected work</p>
-      <div class="section-heading">
-        <h2>Featured projects</h2>
-        <a class="text-link" href="https://github.com/shwetagaikar18?tab=repositories" target="_blank" rel="noopener">View all on GitHub →</a>
+    <section class="skills-section" id="skills">
+      <div class="shell section">
+        <div class="section-label"><span>02</span> TECHNICAL SKILLS</div>
+        <div class="skills-heading"><h2>Tools for the<br><em>whole data journey.</em></h2><p>From ingestion and orchestration to modeling, quality, and analytics.</p></div>
+        <div class="skills-grid">
+          <article class="skill-card"><span class="skill-number">01</span><h3>Google Cloud</h3><p>BigQuery, Cloud Storage, Pub/Sub, Dataflow, Cloud Composer, Cloud Run, Cloud Spanner, Cloud Functions, IAM</p></article>
+          <article class="skill-card"><span class="skill-number">02</span><h3>Programming & processing</h3><p>Python, PySpark, SQL, PL/SQL, Apache Beam</p></article>
+          <article class="skill-card"><span class="skill-number">03</span><h3>Data engineering</h3><p>ETL/ELT, batch processing, event-driven ingestion, data migration, warehousing, data validation, Apache Iceberg, BigQuery Metastore</p></article>
+          <article class="skill-card"><span class="skill-number">04</span><h3>Databases & analytics</h3><p>BigQuery, Teradata, Hive, PostgreSQL, Looker, Looker Studio, Power BI</p></article>
+          <article class="skill-card"><span class="skill-number">05</span><h3>Orchestration & delivery</h3><p>Apache Airflow, Cloud Composer, Git, GitHub Actions, Docker, Jira</p></article>
+          <article class="skill-card"><span class="skill-number">06</span><h3>Platforms & tools</h3><p>Databricks, Kafka, Jupyter Notebook, Terraform, HTML</p></article>
+        </div>
       </div>
-      <div class="project-grid">
-        <article class="project-card">
-          <div class="project-preview preview-one">
-            <div class="preview-window">
-              <div class="preview-bar"></div>
-              <div class="preview-layout"><i></i><i></i><i></i></div>
-            </div>
-          </div>
-          <div class="project-info">
-            <p>Web Development</p>
-            <h3>Creative Portfolio</h3>
-            <a href="https://github.com/shwetagaikar18/portfolio-page" target="_blank" rel="noopener" aria-label="View Creative Portfolio on GitHub">↗</a>
+    </section>
+
+    <section class="section experience-section shell" id="experience">
+      <div class="section-label"><span>03</span> WORK EXPERIENCE</div>
+      <div class="experience-heading"><h2>Where I've<br><em>made a difference.</em></h2><p>Cloud engineering, data platforms, and production-ready pipelines.</p></div>
+      <div class="timeline">
+        <article class="job current-job">
+          <div class="job-date">SEP 2025 — PRESENT</div>
+          <div class="job-content">
+            <div class="job-title"><div><h3>Senior Data Engineer</h3><p class="company">ITC Infotech <span>·</span> Project: VOIS</p></div><span class="current-badge">CURRENT</span></div>
+            <ul>
+              <li>Developed scalable batch and streaming data-processing pipelines using Apache Beam and Google Cloud Dataflow to ingest, transform, and load enterprise datasets into BigQuery.</li>
+              <li>Developed and deployed containerized data-processing and validation services on Cloud Run to support modular, cloud-native data workflows.</li>
+              <li>Orchestrated end-to-end production data pipelines using Apache Airflow in Cloud Composer, managing DAG development, task dependencies, scheduling, and automated retries.</li>
+              <li>Designed and optimized BigQuery analytical datasets and tables using partitioning and clustering strategies, improving SQL query performance and resource efficiency.</li>
+              <li>Implemented file-based and event-driven data ingestion workflows integrating Cloud Storage (GCS) and Pub/Sub for reliable downstream processing.</li>
+              <li>Integrated Cloud Spanner with GCP data pipelines to track operational state, processing status, and reconciliation metadata across workflows.</li>
+              <li>Executed SQL-based data quality checks and source-to-target reconciliation across Teradata, Hive, and BigQuery Silver and Gold layers, validating completeness, duplicates, nulls, and data consistency.</li>
+              <li>Configured IAM roles, permissions, and custom service accounts to enforce secure, least-privilege access across GCP services.</li>
+              <li>Built data-quality monitoring views and interactive KPI dashboards in Looker and Looker Studio backed by curated BigQuery datasets.</li>
+              <li>Monitored production Airflow DAGs and Dataflow jobs, troubleshooting pipeline and SQL failures to maintain high data reliability and SLA adherence.</li>
+            </ul>
           </div>
         </article>
-        <article class="project-card">
-          <div class="project-preview preview-two">
-            <div class="phone"><div></div><span></span><span></span><span></span></div>
+
+        <article class="job">
+          <div class="job-date">MAR 2025 — AUG 2025</div>
+          <div class="job-content">
+            <div class="job-title"><div><h3>Freelance Frontend Developer</h3><p class="company">Independent</p></div></div>
+            <ul>
+              <li>Developed and maintained responsive websites and web applications using HTML, CSS, and modern frontend standards to ensure cross-browser compatibility and usability.</li>
+              <li>Collaborated directly with clients to gather requirements and deliver customized UI improvements within agreed timelines.</li>
+            </ul>
           </div>
-          <div class="project-info">
-            <p>UI / Development</p>
-            <h3>Mobile Experience</h3>
-            <a href="https://github.com/shwetagaikar18?tab=repositories" target="_blank" rel="noopener" aria-label="View Mobile Experience repositories">↗</a>
+        </article>
+
+        <article class="job">
+          <div class="job-date">SEP 2024 — MAR 2025</div>
+          <div class="job-content">
+            <div class="job-title"><div><h3>Senior Cloud Engineer</h3><p class="company">Datamatica</p></div></div>
+            <ul>
+              <li>Led enterprise-scale AWS-to-GCP data migration, ensuring secure data transfer, improved scalability, and cloud cost optimization.</li>
+              <li>Developed PySpark utilities and Python scripts to automate Apache Iceberg table creation, schema updates, and lifecycle management.</li>
+              <li>Implemented and maintained BigQuery Metastore tables to streamline metadata management and enforce consistent data governance across GCP projects.</li>
+              <li>Collaborated with clients and cross-functional engineering teams to deliver tailored GCP data solutions, achieving a 95% client satisfaction rate.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="job">
+          <div class="job-date">AUG 2019 — MAY 2024</div>
+          <div class="job-content">
+            <div class="job-title"><div><h3>Software Engineer</h3><p class="company">MRO Corp India Pvt Ltd</p></div></div>
+            <ul>
+              <li>Designed, built, and maintained end-to-end ETL pipelines to extract, transform, and load multi-source datasets into Google Cloud BigQuery.</li>
+              <li>Performed SQL-based data analysis and validation to support business reporting and ensure high data accuracy and reliability.</li>
+              <li>Investigated and resolved data discrepancies using BigQuery, maintaining clean, error-free records in the Clinical Data Repository (CDR).</li>
+              <li>Managed production issue resolution workflows through Jira, troubleshooting and correcting invalid data across GCP and on-premises databases.</li>
+            </ul>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="contact" id="contact">
-      <p class="section-label">03 / Contact</p>
-      <h2>Have a project in mind?<br><span>Let's talk.</span></h2>
-      <a class="button primary" href="mailto:your.email@example.com">Say hello <span>→</span></a>
+    <section class="credentials-section" id="education">
+      <div class="shell section">
+        <div class="section-label"><span>04</span> CREDENTIALS & EDUCATION</div>
+        <div class="credentials-grid">
+          <div>
+            <h2>Certifications</h2>
+            <ul class="credential-list">
+              <li><span>Google Cloud</span><strong>Associate Cloud Engineer</strong></li>
+              <li><span>SQL + BigQuery</span><strong>Silver Level Certified</strong></li>
+              <li><span>SQL / PL/SQL and Database</span><strong>Quickyes</strong></li>
+              <li><span>Astronomer</span><strong>Apache Airflow Fundamentals</strong></li>
+            </ul>
+          </div>
+          <div class="education-card">
+            <span class="education-icon">✳</span>
+            <p class="card-eyebrow">AUG 2015 — MAY 2018</p>
+            <h3>Bachelor of Computer Applications</h3>
+            <p>Savitribai Phule Pune University</p>
+            <div class="languages"><span>LANGUAGES</span><p>English <i>·</i> Hindi <i>·</i> Marathi</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section shell" id="contact">
+      <div><div class="section-label"><span>05</span> LET'S CONNECT</div><h2>Let's build something<br><em>meaningful with data.</em></h2><p>For opportunities and professional inquiries, please get in touch.</p></div>
+      <div class="contact-links">
+        <a href="mailto:shwetagaikar18@gmail.com"><span>Email</span><strong>shwetagaikar18@gmail.com</strong><b>↗</b></a>
+        <a href="tel:+918928676560"><span>Phone</span><strong>+91 8928676560</strong><b>↗</b></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><strong>Connect on LinkedIn</strong><b>↗</b></a>
+        <a href="https://github.com/shwetagaikar18" target="_blank" rel="noopener noreferrer"><span>GitHub</span><strong>shwetagaikar18</strong><b>↗</b></a>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <a class="logo" href="#top">SG<span>.</span></a>
-    <p>© 2026 Shweta Gaikar</p>
-    <div class="socials">
-      <a href="https://github.com/shwetagaikar18" target="_blank" rel="noopener">GitHub</a>
-      <a href="#top">Back to top ↑</a>
-    </div>
-  </footer>
-
+  <footer class="footer shell"><a class="brand" href="#top">SG<span>.</span></a><p>© 2026 Shweta Gaikar <span>·</span> Senior GCP Data Engineer</p><a href="#top">Back to top ↑</a></footer>
   <script src="script.js"></script>
 </body>
 </html>
